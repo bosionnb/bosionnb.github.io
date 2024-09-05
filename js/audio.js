@@ -129,10 +129,12 @@ function closeListBoard() {
 var musicId = 0;
 
 // 后台音乐列表
-let musicData = [['だんだん近くなる (逐渐靠近)', '云汐40mP'], ['她不是', 'BigYear大年'], ['江南烟雨色', '杨树人'], ['Vision pt.II', 'Vicetone']
-, ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone']
-, ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone']
-, ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone'], ['Vision pt.II', 'Vicetone']];
+let musicData = [['だんだん近くなる (逐渐靠近)', '40mP'], ['她不是', 'BigYear大年']
+                , ['Ascended Vibrations', '¿Téo？'], ['我是如此相信', '周杰伦']
+                , ['Melody', 'Ash'], ['随心所欲', 'BGM制造商']
+                , ['我记得', '赵雷'], ['Travelers', 'Andrew Prahlow']
+                , ['回到夏天', 'ali habar艾力'], ['Travelers', 'Andrew Prahlow']
+            ];
 
 // 初始化音乐
 function initMusic() {
