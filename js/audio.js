@@ -128,6 +128,7 @@ function closeListBoard() {
 // 存储当前播放的音乐序号
 var musicId = 0;
 
+
 // 后台音乐列表
 let musicData = [['だんだん近くなる (逐渐靠近)', '40mP'], ['她不是', 'BigYear大年']
                 , ['Ascended Vibrations', '¿Téo？'], ['我是如此相信', '周杰伦']
@@ -194,7 +195,7 @@ audio.onended = function () {
 skipForward.addEventListener('click', function (event) {
     musicId = musicId - 1;
     if (musicId < 0) {
-        musicId = 3;
+        musicId = 5;
     }
     initAndPlay();
 });
@@ -202,7 +203,7 @@ skipForward.addEventListener('click', function (event) {
 // 下一首
 skipBackward.addEventListener('click', function (event) {
     musicId = musicId + 1;
-    if (musicId > 3) {
+    if (musicId > 5) {
         musicId = 0;
     }
     initAndPlay();
@@ -252,6 +253,14 @@ document.getElementById("music2").addEventListener('click', function (event) {
 });
 document.getElementById("music3").addEventListener('click', function (event) {
     musicId = 3;
+    initAndPlay();
+});
+document.getElementById("music4").addEventListener('click', function (event) {
+    musicId = 4;
+    initAndPlay();
+});
+document.getElementById("music5").addEventListener('click', function (event) {
+    musicId = 5;
     initAndPlay();
 });
 
